@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindromeString(str) {
+  var alphanumericString = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
+  var reversedString = alphanumericString.split('').reverse().join('');
+
+  return alphanumericString === reversedString;
+}
+
+
+console.log(isPalindromeString("level"));             
+console.log(isPalindromeString("Racecar"));            
+console.log(isPalindromeString("Hello, World!"));      
+console.log(isPalindromeString("A man, a plan, a canal, Panama!"));
+    </script>
+</body>
+</html>

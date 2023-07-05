@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPalindromeNumber(number) {
+  var numberString = number.toString();
+  var reversedString = numberString.split('').reverse().join('');
+
+  return numberString === reversedString;
+}
+
+
+console.log(isPalindromeNumber(121));  
+console.log(isPalindromeNumber(12321)); 
+console.log(isPalindromeNumber(12345)); 
+    </script>
+</body>
+</html>

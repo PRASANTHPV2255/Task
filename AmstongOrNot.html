@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function isArmstrongNumber(number) {
+        var sum = 0;
+        var temp = number;
+        var numberOfDigits = number.toString().length;
+      
+        while (temp > 0) {
+          var digit = temp % 10;
+          sum += Math.pow(digit, numberOfDigits);
+          temp = Math.floor(temp / 10);
+        }
+      
+        return sum === number;
+      }
+      
+    
+      document.write(isArmstrongNumber(370));  
+      document.write(isArmstrongNumber(123));
+      document.write(isArmstrongNumber(153));  
+    </script>
+</body>
+</html>
